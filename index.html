@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday ❤️</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #ffe4f2;
+            color: #444;
+            text-align: center;
+        }
+
+        header {
+            padding: 40px 20px;
+            background: #ffb6d9;
+            color: white;
+            font-size: 28px;
+            font-weight: 700;
+            box-shadow: 0px 3px 8px rgba(0,0,0,0.1);
+        }
+
+        .section {
+            padding: 40px 20px;
+        }
+
+        .gallery img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 20px;
+            margin: 10px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .memory-box {
+            background: white;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 600px;
+            border-radius: 18px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+        }
+
+        button {
+            background: #ff6fb4;
+            border: none;
+            padding: 15px 25px;
+            color: white;
+            font-size: 18px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #ff4fa0;
+        }
+
+        #wishText {
+            font-size: 20px;
+            margin-top: 20px;
+            font-weight: 600;
+            color: #ff4fa0;
+        }
+
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="fade-in">🎂 Happy Birthday, My jaan 💖</header>
+
+    <div class="section fade-in">
+        <h2>Your Special Day 🎉</h2>
+        <p>Wishing you happiness, love, and lots of smiles today!</p>
+    </div>
+
+    <div class="section fade-in">
+        <h2>Photo Gallery 📸</h2>
+        <div class="gallery">
+            <img src="Screenshot 2025-12-06 204407.png" alt="Photo 1">
+            <img src="Screenshot 2025-12-06 204720.png" alt="Photo 2">
+            <img src="Screenshot 2025-12-06 204843.png" alt="Photo 3">
+        </div>
+    </div>
+
+    <div class="section fade-in">
+        <h2>Our Sweet Memories 🌸</h2>
+
+        <div class="memory-box">• our first hug date is 03/02/2025</div>
+        <div class="memory-box">• 15/08/2025 jab main ne aapko first time kiss kiya tha</div>
+        <div class="memory-box">• 05/09/2025 jab aapne mujhe first time kiss kiya tha</div>
+    </div>
+
+    <div class="section fade-in">
+        <h2>Write Your Birthday Wish 💌</h2>
+        <button onclick="showWish()">Click to Reveal</button>
+        <p id="wishText"></p>
+    </div>
+
+    <script>
+        function showWish() {
+            document.getElementById("wishText").innerText =
+                "Many many happy returns of the day my jaan! You deserve all the joy and sunshine today 💕";
+        }
+    </script>
+
+</body>
+</html>
